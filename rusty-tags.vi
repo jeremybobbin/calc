@@ -1,0 +1,42 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	/45968eff/
+Add	/home/jer/Projects/Rust/Terminal/calc/src/expression.rs	/^    Add,$/;"	e	enum:Operator
+BadNumber	/home/jer/Projects/Rust/Terminal/calc/src/main.rs	/^    BadNumber,$/;"	e	enum:ParseError
+Divide	/home/jer/Projects/Rust/Terminal/calc/src/expression.rs	/^    Divide,$/;"	e	enum:Operator
+Expression	/home/jer/Projects/Rust/Terminal/calc/src/expression.rs	/^impl Expression {$/;"	c
+Expression	/home/jer/Projects/Rust/Terminal/calc/src/expression.rs	/^pub enum Expression {$/;"	g
+Expression	/home/jer/Projects/Rust/Terminal/calc/src/main.rs	/^impl From<f64> for Expression {$/;"	c
+ExpressionIter	/home/jer/Projects/Rust/Terminal/calc/src/parser.rs	/^impl<'a> ExpressionIter<'a> {$/;"	c
+ExpressionIter	/home/jer/Projects/Rust/Terminal/calc/src/parser.rs	/^impl<'a> ops::Deref for ExpressionIter<'a> {$/;"	c
+ExpressionIter	/home/jer/Projects/Rust/Terminal/calc/src/parser.rs	/^impl<'a> ops::DerefMut for ExpressionIter<'a> {$/;"	c
+ExpressionIter	/home/jer/Projects/Rust/Terminal/calc/src/parser.rs	/^pub struct ExpressionIter<'a>(pub PeekChars<'a>);$/;"	s
+Literal	/home/jer/Projects/Rust/Terminal/calc/src/expression.rs	/^    Literal(f64),$/;"	e	enum:Expression
+MissingTokens	/home/jer/Projects/Rust/Terminal/calc/src/main.rs	/^    MissingTokens$/;"	e	enum:ParseError
+Multiply	/home/jer/Projects/Rust/Terminal/calc/src/expression.rs	/^    Multiply,$/;"	e	enum:Operator
+NoTokens	/home/jer/Projects/Rust/Terminal/calc/src/main.rs	/^    NoTokens,$/;"	e	enum:ParseError
+Operator	/home/jer/Projects/Rust/Terminal/calc/src/expression.rs	/^pub enum Operator {$/;"	g
+Operator	/home/jer/Projects/Rust/Terminal/calc/src/main.rs	/^    Operator,$/;"	e	enum:ParseError
+ParseError	/home/jer/Projects/Rust/Terminal/calc/src/main.rs	/^enum ParseError {$/;"	g
+PeekChars	/home/jer/Projects/Rust/Terminal/calc/src/parser.rs	/^type PeekChars<'a> = Peekable<Chars<'a>>;$/;"	t
+Relationship	/home/jer/Projects/Rust/Terminal/calc/src/expression.rs	/^    Relationship(Box<Expression>, Operator, Box<Expression>),$/;"	e	enum:Expression
+Subtract	/home/jer/Projects/Rust/Terminal/calc/src/expression.rs	/^    Subtract,$/;"	e	enum:Operator
+Target	/home/jer/Projects/Rust/Terminal/calc/src/parser.rs	/^    type Target = PeekChars<'a>;$/;"	t	implementation:ExpressionIter
+deref	/home/jer/Projects/Rust/Terminal/calc/src/parser.rs	/^    fn deref(&self) -> &Self::Target {$/;"	P	implementation:ExpressionIter
+deref_mut	/home/jer/Projects/Rust/Terminal/calc/src/parser.rs	/^    fn deref_mut(&mut self) -> &mut Self::Target {$/;"	P	implementation:ExpressionIter
+eval	/home/jer/Projects/Rust/Terminal/calc/src/expression.rs	/^    pub fn eval(&mut self) -> f64 {$/;"	P	implementation:Expression
+expression	/home/jer/Projects/Rust/Terminal/calc/src/main.rs	/^pub mod expression;$/;"	n
+from	/home/jer/Projects/Rust/Terminal/calc/src/main.rs	/^    fn from(n: f64) -> Expression {$/;"	P	implementation:Expression
+impl_ops	/home/jer/Projects/Rust/Terminal/calc/src/expression.rs	/^macro_rules! impl_ops {$/;"	M
+main	/home/jer/Projects/Rust/Terminal/calc/src/main.rs	/^fn main() {$/;"	f
+next_expression	/home/jer/Projects/Rust/Terminal/calc/src/parser.rs	/^    pub fn next_expression(&mut self) -> Option<Expression> {$/;"	P	implementation:ExpressionIter
+next_having	/home/jer/Projects/Rust/Terminal/calc/src/main.rs	/^fn next_having<F>(chars: &mut std::iter::Peekable<std::str::Chars>, pred: F) -> String$/;"	f
+next_matching	/home/jer/Projects/Rust/Terminal/calc/src/parser.rs	/^    pub fn next_matching<F>(&mut self, pred: F) -> String $/;"	P	implementation:ExpressionIter
+next_number	/home/jer/Projects/Rust/Terminal/calc/src/main.rs	/^fn next_number(chars: &mut std::iter::Peekable<std::str::Chars>) -> Option<f64> {$/;"	f
+next_number	/home/jer/Projects/Rust/Terminal/calc/src/parser.rs	/^    pub fn next_number(&mut self) -> Option<f64> {$/;"	P	implementation:ExpressionIter
+next_operator	/home/jer/Projects/Rust/Terminal/calc/src/parser.rs	/^    pub fn next_operator(&mut self) -> Option<Operator> {$/;"	P	implementation:ExpressionIter
+parser	/home/jer/Projects/Rust/Terminal/calc/src/main.rs	/^pub mod parser;$/;"	n
